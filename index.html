@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav class="topnav" id="main-nav">
+      <a href="#" class="nav-links">Home</a>
+      <a href="#" class="nav-links">Upload</a>
+      <a href="#" class="nav-links">Info</a>
+      <a href="#" class="nav-links">Credits</a>
+      <a href="#" class="nav-links">More</a>
+      <a href="javascript:void(0);" class="nav-link trigram" onclick="navToggle()">&#9776;</a>
+
+    </nav>
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="img/purpleSunset.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="img/mountain.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="img/sunset.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="img/water.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="img/img_nature_wide.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="img/img_lights_wide.jpg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+        <p id="captionOne"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="img/purpleSunset.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Mountain">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/mountain.jpg" style="width:100%" onclick="currentSlide(2)" alt="Purple Sunset">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/sunset.jpg" style="width:100%" onclick="currentSlide(3)" alt="Orange Sunset">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/water.jpg" style="width:100%" onclick="currentSlide(4)" alt="Lake">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/img_nature_wide.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and Sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img/img_lights_wide.jpg" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
+        </div>
+      </div>
+    </div>
+
+
+
+    <article class="grid-container">
+
+      <div class="card one">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>DESK</h3>
+          <p>This is a desk. People sit here to waste time. There are lots of elements here at play to make this space cozy. </p>
+          <div class="btn-cont">
+            <button class="modal-button" href="#myModal1">More</button>
+          </div>
+          <div id="myModal1" class="modal">
+            <div class="modal-content">
+              <span class="close">&times</span>
+              <div class="modal-body">
+                <img src="img/study.jpg" alt="study" style="width:100%;max-width:500px;">
+                <p>This is a desk. People sit here to waste time. There are lots of elements here at play to make this space cozy.
+                  Such as the yellow couch and plants. How about that window! Am I right?</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end .content-->
+      </div><!--end .card-->
+
+      <div class="card two">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>TWO COFFEE</h3>
+          <p>This is coffee. Someone is pouring something into the coffee cup. </p>
+          <div class="btn-cont">
+          <button class="modal-button" href="#myModal2">More</button>
+        </div>
+          <div id="myModal2" class="modal">
+            <div class="modal-content">
+              <span class="close">&times</span>
+              <div class="modal-body">
+                <img src="img/coffee1.jpg" alt="coffee" style="width:100%;max-width:500px;">
+                <p>This is coffee. Someone is pouring something into the coffee cup.
+                Why do those cups not have handles? I do not know. </p>
+              </div>
+            </div>
+          </div>
+        </div><!--end .content-->
+      </div><!--end .card-->
+
+      <div class="card three">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>BOOK AND LAPTOP STACK</h3>
+          <p>This is a laptop and books. In the back you can see a book case.</p>
+          <div class="btn-cont">
+          <button class="modal-button" href="#myModal3">More</button>
+        </div>
+          <div id="myModal3" class="modal">
+            <div class="modal-content">
+              <span class="close">&times</span>
+              <div class="modal-body">
+                <img src="img/books.jpg" alt="books" style="width:100%;max-width:500px;">
+                <p>This is a laptop and books. In the back you can see a book case. Perhaps this photo
+                was taken in a library. If that's the case... why are the books behind the laptop?</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end .content-->
+      </div><!--end .card-->
+
+      <div class="card four">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>TEA</h3>
+          <p>This is tea. The tea is being poured from a very nice jar.</p>
+          <div class="btn-cont">
+          <button class="modal-button" href="#myModal4">More</button>
+        </div>
+          <div id="myModal4" class="modal">
+            <div class="modal-content">
+              <span class="close">&times</span>
+              <div class="modal-body">
+                <img src="img/tea.jpg" alt="tea" style="width:100%;max-width:500px;">
+                <p>This is tea. The tea is being poured from a very nice jar. As you can see they placed the useless leaves
+                on the little plate for aesthetic reasons.</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end .content-->
+      </div><!--end .card-->
+
+      <div class="card five">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>FLOWER</h3>
+          <p>This is flowers with a blue scenery. With the background blurred
+          because why not.</p>
+          <div class="btn-cont">
+          <button class="modal-button" href="#myModal5">More</button>
+        </div>
+          <div id="myModal5" class="modal">
+            <div class="modal-content">
+              <span class="close">&times</span>
+              <div class="modal-body">
+                <img src="img/flower.jpg" alt="flower" style="width:100%;max-width:500px;">
+                <p>This is flowers with a blue scenery. With the background blurred
+                because why not. At least you can see the flower in high def and see every detail.</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end .content-->
+      </div><!--end .card-->
+
+      <div class="card six">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>BEAR IN THE STORM</h3>
+          <p>This is a cute bear strolling in the grass. Look at the ears. </p>
+          <div class="btn-cont">
+          <button class="modal-button" href="#myModal6">More</button>
+        </div>
+          <div id="myModal6" class="modal">
+            <div class="modal-content">
+              <span class="close">&times</span>
+              <div class="modal-body">
+                <img src="img/bear.jpg" alt="bear" style="width:100%;max-width:500px;">
+                <p>This is a cute bear strolling in the grass. Look at the ears. The grey fog adds to
+                the bears aesthetic. There is a mountain in the back.</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end .content-->
+      </div><!--end .card-->
+
+      <div class="card seven">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>FLY BIRD FLY</h3>
+          <p>This is a white bird leaping away from the water. It's feet are very thin.</p>
+          <div class="btn-cont">
+          <button class="modal-button" href="#myModal7">More</button>
+        </div>
+          <div id="myModal7" class="modal">
+            <div class="modal-content">
+              <span class="close">&times</span>
+              <div class="modal-body">
+                <img src="img/bird.jpg" alt="bird" style="width:100%;max-width:500px;">
+                <p>This is a white bird leaping away from the water. It's feet are very thin.
+                It's wings spread, it's face forward.</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end .content-->
+      </div><!--end .card-->
+
+      <div class="card eight">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>CACTUS SCENE</h3>
+          <p>This is a desert. This is a cactus. That cactus is the tallest cactus.</p>
+          <div class="btn-cont">
+          <button class="modal-button" href="#myModal8">More</button>
+        </div>
+          <div id="myModal8" class="modal">
+            <div class="modal-content">
+              <span class="close">&times</span>
+              <div class="modal-body">
+                <img src="img/cacti.jpg" alt="cacti" style="width:100%;max-width:500px;">
+                <p>This is a desert. This is a cactus. That cactus is the tallest cactus. The cactus is winning.</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end .content-->
+      </div><!--end .card-->
+
+      <div class="card nine">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>MAN AND HATS</h3>
+          <p>This is a man with two hats in his hands but he is wearing a hat.</p>
+          <div class="btn-cont">
+          <button class="modal-button" href="#myModal9">More</button>
+        </div>
+          <div id="myModal9" class="modal">
+            <div class="modal-content">
+              <span class="close">&times</span>
+              <div class="modal-body">
+                <img src="img/person.jpg" alt="person" style="width:100%;max-width:500px;">
+                <p>This is a man with two hats in his hands but he is wearing a hat.
+                I bet he didn't even buy the hats.</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end .content-->
+      </div><!--end .card-->
+
+      <div class="card ten">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>LOTS OF CLUTTER</h3>
+          <p>This is what you might see from college students who are graduating. </p>
+          <div class="btn-cont">
+          <button class="modal-button" href="#myModal10">More</button>
+        </div>
+          <div id="myModal10" class="modal">
+            <div class="modal-content">
+              <span class="close">&times</span>
+              <div class="modal-body">
+                <img src="img/clutter.jpg" alt="clutter" style="width:100%;max-width:500px;">
+                <p>This is what you might see from college students who are graduating. Also
+                just a regular Clarkson student dorm room. </p>
+              </div>
+            </div>
+          </div>
+        </div><!--end .content-->
+      </div><!--end .card-->
+
+      <div class="card eleven">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>MUSIC RECORDS AND CHAIR</h3>
+          <p>This is a chair in front of an assortment of music records. The chair listens to nothing.</p>
+          <div class="btn-cont">
+            <button class="modal-button" href="#myModal11">More</button>
+          </div>
+          <div id="myModal11" class="modal">
+            <div class="modal-content">
+              <span class="close">&times</span>
+              <div class="modal-body">
+                <img src="img/chair.jpg" alt="chair" style="width:100%;max-width:500px;">
+                <p>This is a chair in front of an assortment of music records. The chair listens to nothing.
+                The chair sings "lalalal".</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end .content-->
+      </div><!--end .card-->
+
+      <div class="card twelve">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>SOLO MIC</h3>
+          <p>This is a solo mic. A scene you might see in the opening credits of a movie.</p>
+          <div class="btn-cont">
+          <button class="modal-button" href="#myModal12">More</button>
+        </div>
+          <div id="myModal12" class="modal">
+            <div class="modal-content">
+              <span class="close">&times</span>
+              <div class="modal-body">
+                <img src="img/music.jpg" alt="mic" style="width:100%;max-width:500px;">
+                <p>This is a solo mic. A scene you might see in the opening credits of a movie. The MIC is on there is static.
+                The MIC is off still static.</p>
+              </div>
+            </div>
+          </div>
+        </div><!--end .content-->
+      </div><!--end .card-->
+
+
+    </article>
+    <footer>
+      <p>&copy; 2021, Jennifer Reyes</p>
+    </footer>
+    <script src="js/page.js"></script>
+  </body>
+</html>

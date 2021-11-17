@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #3d558a;;
+}
+footer {
+  background-color: #333;
+  color: #ddd;
+  padding: 1em;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: #DDD;
+  padding: 1em;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  nav {flex-direction: row;}
+}
+nav a {
+  position: relative;
+  color: #DDD;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #58b0e4 ;
+  transition: color 250ms ease-in-out;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+.trigram {
+  font-size: 1.75em;
+  display: none;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .topnav a {display: none;}
+  .topnav a.trigram {display: inherit; align-self: flex-end;}
+}
+@media screen and (max-width: 767px) {
+  .topnav.responsive {align-items: center;}
+  .topnav.responsive a {display:inherit;}
+  .topnav.responsive a.trigram {visibility: hidden; position: absolute; right: 3%; top: 2%;}
+  .topnav.responsive a.trigram::after {content:'\000D7'; visibility:visible; text-indent: -.5em;}
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  background-color: #EEE;
+  /*padding: 1em;*/
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.btn-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+.grid-container {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-gap: 1.5em;
+  grid-template-columns: 1fr;
+  padding: 0.5em;
+}
+@media screen and (min-width: 550px) {
+  .grid-container {grid-template-columns: repeat(2, 1fr);}
+}
+@media screen and (min-width: 768px) {
+  .grid-container {grid-template-columns: repeat(3, 1fr);}
+}
+@media screen and (min-width: 990px) {
+  .grid-container {grid-template-columns: repeat(4, 1fr);}
+}
+
+.card {
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #EEE;
+}
+.card-content {
+  padding: 1em;
+}
+.thumb {
+  padding-bottom: 60%;
+  background-position: center center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.one .thumb {
+  background-image: url('../img/study.jpg');
+}
+.two .thumb {
+  background-image: url('../img/coffee1.jpg');
+}
+
+.three .thumb {
+  background-image: url('../img/books.jpg');
+}
+.four .thumb {
+  background-image: url('../img/tea.jpg');
+}
+.five .thumb {
+  background-image: url('../img/flower.jpg');
+}
+.six .thumb {
+  background-image: url('../img/bear.jpg');
+}
+.seven .thumb {
+  background-image: url('../img/bird.jpg');
+}
+.eight .thumb {
+  background-image: url('../img/cacti.jpg');
+}
+.nine .thumb {
+  background-image: url('../img/person.jpg');
+}
+.ten .thumb {
+  background-image: url('../img/clutter.jpg');
+}
+.eleven .thumb {
+  background-image: url('../img/chair.jpg');
+}
+.twelve .thumb {
+  background-image: url('../img/music.jpg');
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /*display: block;
+  max-width: 700px;*/
+}
+
+.modal-body {
+    padding: 2px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+}
+@media screen and (max-width: 768px) {
+  .modal-body{grid-template-columns: 1fr;}
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
